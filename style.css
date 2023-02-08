@@ -1,0 +1,64 @@
+main {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin-top: 10%;
+    margin-left: 40%;
+  }
+  
+  .box1, .box2, .box3, .box4 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    transition: 1s;
+  }
+  h2 {
+    font-size: 3rem;
+    text-align: center;
+    line-height: 500px;
+  }
+  .box1 {
+    background-color: dimgray;
+    top: 0;
+    left: 50%;
+    transform-origin: top right;
+  }
+  
+  .box2 {
+     background-color: steelblue;
+    top: 0;
+    left: 0;
+    transform-origin: top left;
+  }
+  
+  .box3 {
+   background-color: yellow;
+    top: 50%;
+    left: 0;
+    transform-origin: bottom left;
+  }
+  
+  .box4 {
+    background-color: rosybrown;
+    top: 50%;
+    left: 50%;
+    transform-origin: bottom right;
+ 
+  }
+  
+  main:hover .box1 {
+    transform: rotate(-90deg);
+  }
+  
+  main:hover .box2 {
+    transform: rotate(90deg);
+  }
+  
+  main:hover .box3 {
+    transform: rotate(-90deg);
+  }
+  
+ main:hover .box4{
+    transform: rotate(90deg);
+  }
+  
